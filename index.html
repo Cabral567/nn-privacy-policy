@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade — NN Drive Image Drop</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f7f5f2;
+      color: #1a1a1a;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container { max-width: 680px; margin: 0 auto; }
+    header {
+      border-bottom: 3px solid #b2512b;
+      padding-bottom: 24px;
+      margin-bottom: 36px;
+    }
+    .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+    .brand-logo {
+      width: 48px; height: 48px;
+      background: #002a2b;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; font-weight: 800; color: #b2512b;
+      letter-spacing: -1px;
+    }
+    .brand-name { font-size: 18px; font-weight: 700; color: #002a2b; }
+    .brand-sub { font-size: 12px; color: #888; margin-top: 2px; }
+    h1 { font-size: 26px; font-weight: 700; color: #002a2b; }
+    .updated { font-size: 13px; color: #888; margin-top: 6px; }
+    section { margin-bottom: 32px; }
+    h2 {
+      font-size: 16px; font-weight: 700;
+      color: #002a2b;
+      margin-bottom: 10px;
+      padding-left: 12px;
+      border-left: 3px solid #b2512b;
+    }
+    p { font-size: 14px; color: #444; margin-bottom: 10px; }
+    ul { padding-left: 20px; margin-bottom: 10px; }
+    li { font-size: 14px; color: #444; margin-bottom: 6px; }
+    .highlight {
+      background: #fff;
+      border: 1px solid #e0dbd5;
+      border-left: 3px solid #2e7474;
+      border-radius: 6px;
+      padding: 14px 16px;
+      margin-bottom: 16px;
+    }
+    .highlight p { margin: 0; color: #333; }
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid #e0dbd5;
+      font-size: 12px;
+      color: #aaa;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="brand">
+      <div class="brand-logo">NN</div>
+      <div>
+        <div class="brand-name">NN Drive Image Drop</div>
+        <div class="brand-sub">Extensão para Google Chrome</div>
+      </div>
+    </div>
+    <h1>Política de Privacidade</h1>
+    <div class="updated">Última atualização: abril de 2026</div>
+  </header>
+
+  <div class="highlight">
+    <p><strong>Resumo:</strong> Esta extensão não coleta, armazena nem compartilha nenhum dado pessoal. O único acesso é ao Google Drive do próprio usuário, com permissão explícita e restrita.</p>
+  </div>
+
+  <section>
+    <h2>1. O que esta extensão faz</h2>
+    <p>A extensão <strong>NN Drive Image Drop</strong> permite que o usuário envie imagens diretamente para uma pasta no seu próprio Google Drive e obtenha um link de visualização. O fluxo completo ocorre entre o navegador do usuário e os servidores do Google — nenhum dado passa por servidores da NN Contabilidade & Consultoria.</p>
+  </section>
+
+  <section>
+    <h2>2. Dados acessados</h2>
+    <p>Para funcionar, a extensão solicita autenticação com a conta Google do usuário. Através dessa autenticação, acessa:</p>
+    <ul>
+      <li><strong>Nome e e-mail</strong> — exibidos na interface da extensão para confirmar qual conta está conectada.</li>
+      <li><strong>Foto de perfil</strong> — exibida como avatar na interface.</li>
+      <li><strong>Google Drive</strong> — somente para criar uma pasta chamada "Drive Image Drop" e salvar os arquivos enviados pelo próprio usuário.</li>
+    </ul>
+    <p>O escopo OAuth utilizado é <code>drive.file</code>, o mais restrito disponível — que permite acesso <strong>apenas aos arquivos criados pela própria extensão</strong>, sem acesso a nenhum outro arquivo do Drive do usuário.</p>
+  </section>
+
+  <section>
+    <h2>3. O que não fazemos</h2>
+    <ul>
+      <li>Não coletamos nenhum dado pessoal</li>
+      <li>Não armazenamos arquivos, tokens ou informações em servidores próprios</li>
+      <li>Não compartilhamos dados com terceiros</li>
+      <li>Não monitoramos o uso da extensão</li>
+      <li>Não acessamos histórico de navegação, abas ou outros dados do navegador</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>4. Armazenamento do token de autenticação</h2>
+    <p>O token de autenticação do Google é gerenciado exclusivamente pelo próprio navegador Chrome, através da API <code>chrome.identity</code>. A extensão não persiste o token em nenhum local externo.</p>
+  </section>
+
+  <section>
+    <h2>5. Permissões declaradas</h2>
+    <ul>
+      <li><strong>identity</strong> — necessária para autenticar o usuário com a conta Google via OAuth2.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>6. Serviços de terceiros</h2>
+    <p>A extensão se comunica exclusivamente com as APIs oficiais do Google:</p>
+    <ul>
+      <li>Google Drive API (upload de arquivos e criação de pasta)</li>
+      <li>Google Drive About API (nome, e-mail e foto do usuário logado)</li>
+    </ul>
+    <p>Estas comunicações estão sujeitas à <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade do Google</a>.</p>
+  </section>
+
+  <section>
+    <h2>7. Contato</h2>
+    <p>Em caso de dúvidas sobre esta política, entre em contato pelo e-mail: <a href="mailto:lucascabralp567@gmail.com">lucascabralp567@gmail.com</a></p>
+  </section>
+
+  <footer>
+    &copy; 2026 NN Contabilidade &amp; Consultoria · Todos os direitos reservados
+  </footer>
+
+</div>
+</body>
+</html>

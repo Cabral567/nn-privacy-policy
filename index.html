@@ -3,73 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Privacidade — NN Drive Image Drop</title>
+  <title>Política de Privacidade — NN Drive Upload</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #f7f5f2;
-      color: #1a1a1a;
-      line-height: 1.7;
-      padding: 40px 20px;
-    }
-    .container { max-width: 680px; margin: 0 auto; }
-    header {
-      border-bottom: 3px solid #b2512b;
-      padding-bottom: 24px;
-      margin-bottom: 36px;
-    }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; background: #f7f5f2; color: #1a1a1a; line-height: 1.7; padding: 40px 20px; }
+    .container { max-width: 700px; margin: 0 auto; }
+    header { border-bottom: 3px solid #b2512b; padding-bottom: 24px; margin-bottom: 36px; }
     .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
-    .brand-logo {
-      width: 48px; height: 48px;
-      background: #002a2b;
-      border-radius: 10px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 16px; font-weight: 800; color: #b2512b;
-      letter-spacing: -1px;
-    }
+    .brand-logo { width: 48px; height: 48px; background: #002a2b; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800; color: #b2512b; }
     .brand-name { font-size: 18px; font-weight: 700; color: #002a2b; }
-    .brand-sub { font-size: 12px; color: #888; margin-top: 2px; }
+    .brand-sub  { font-size: 12px; color: #888; margin-top: 2px; }
     h1 { font-size: 26px; font-weight: 700; color: #002a2b; }
     .updated { font-size: 13px; color: #888; margin-top: 6px; }
     section { margin-bottom: 32px; }
-    h2 {
-      font-size: 16px; font-weight: 700;
-      color: #002a2b;
-      margin-bottom: 10px;
-      padding-left: 12px;
-      border-left: 3px solid #b2512b;
-    }
-    p { font-size: 14px; color: #444; margin-bottom: 10px; }
+    h2 { font-size: 16px; font-weight: 700; color: #002a2b; margin-bottom: 10px; padding-left: 12px; border-left: 3px solid #b2512b; }
+    p  { font-size: 14px; color: #444; margin-bottom: 10px; }
     ul { padding-left: 20px; margin-bottom: 10px; }
     li { font-size: 14px; color: #444; margin-bottom: 6px; }
-    .highlight {
-      background: #fff;
-      border: 1px solid #e0dbd5;
-      border-left: 3px solid #2e7474;
-      border-radius: 6px;
-      padding: 14px 16px;
-      margin-bottom: 16px;
-    }
-    .highlight p { margin: 0; color: #333; }
-    footer {
-      margin-top: 48px;
-      padding-top: 20px;
-      border-top: 1px solid #e0dbd5;
-      font-size: 12px;
-      color: #aaa;
-      text-align: center;
-    }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 12px; font-size: 13px; }
+    th { background: #002a2b; color: #fff; padding: 8px 12px; text-align: left; font-weight: 600; }
+    td { padding: 8px 12px; border-bottom: 1px solid #e0dbd5; color: #444; vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    .highlight { background: #fff; border: 1px solid #e0dbd5; border-left: 3px solid #2e7474; border-radius: 6px; padding: 14px 16px; margin-bottom: 16px; }
+    .highlight p { margin: 0; }
+    a { color: #b2512b; }
+    code { background: #eee; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+    footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #e0dbd5; font-size: 12px; color: #aaa; text-align: center; }
   </style>
 </head>
 <body>
 <div class="container">
-
   <header>
     <div class="brand">
       <div class="brand-logo">NN</div>
       <div>
-        <div class="brand-name">NN Drive Image Drop</div>
+        <div class="brand-name">NN Drive Upload</div>
         <div class="brand-sub">Extensão para Google Chrome</div>
       </div>
     </div>
@@ -78,67 +46,95 @@
   </header>
 
   <div class="highlight">
-    <p><strong>Resumo:</strong> Esta extensão não coleta, armazena nem compartilha nenhum dado pessoal. O único acesso é ao Google Drive do próprio usuário, com permissão explícita e restrita.</p>
+    <p><strong>Resumo:</strong> Esta extensão não coleta, armazena nem compartilha dados pessoais em servidores próprios. Toda a operação ocorre diretamente entre o navegador do usuário e os servidores do Google. Nenhum dado é enviado a terceiros.</p>
   </div>
 
   <section>
-    <h2>1. O que esta extensão faz</h2>
-    <p>A extensão <strong>NN Drive Image Drop</strong> permite que o usuário envie imagens diretamente para uma pasta no seu próprio Google Drive e obtenha um link de visualização. O fluxo completo ocorre entre o navegador do usuário e os servidores do Google — nenhum dado passa por servidores da NN Contabilidade & Consultoria.</p>
+    <h2>1. Informações gerais</h2>
+    <p>A extensão <strong>NN Drive Upload</strong> foi desenvolvida pela NN Contabilidade &amp; Consultoria para uso interno da equipe. Esta política descreve como a extensão coleta, usa, processa, armazena e compartilha dados do usuário, em conformidade com a <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google API Services User Data Policy</a> e as <a href="https://developer.chrome.com/docs/webstore/program-policies/" target="_blank">Chrome Web Store Policies</a>.</p>
   </section>
 
   <section>
-    <h2>2. Dados acessados</h2>
-    <p>Para funcionar, a extensão solicita autenticação com a conta Google do usuário. Através dessa autenticação, acessa:</p>
+    <h2>2. Dados coletados</h2>
+    <p>A extensão acessa os seguintes dados via API do Google, com autorização explícita do usuário:</p>
+    <table>
+      <tr><th>Dado</th><th>Finalidade</th><th>Armazenamento</th></tr>
+      <tr><td>Nome completo</td><td>Exibição na interface para confirmar a conta conectada</td><td>Não armazenado</td></tr>
+      <tr><td>Endereço de e-mail</td><td>Exibição na interface da extensão</td><td>Não armazenado</td></tr>
+      <tr><td>Foto de perfil</td><td>Exibição como avatar na interface</td><td>Não armazenado</td></tr>
+      <tr><td>Arquivos enviados pelo usuário</td><td>Upload para o Google Drive do próprio usuário</td><td>Apenas no Drive do usuário</td></tr>
+    </table>
+    <p>Nenhum dado é enviado para servidores da NN Contabilidade &amp; Consultoria ou de terceiros.</p>
+  </section>
+
+  <section>
+    <h2>3. Como os dados são usados</h2>
+    <p>Os dados acessados são utilizados exclusivamente para:</p>
     <ul>
-      <li><strong>Nome e e-mail</strong> — exibidos na interface da extensão para confirmar qual conta está conectada.</li>
-      <li><strong>Foto de perfil</strong> — exibida como avatar na interface.</li>
-      <li><strong>Google Drive</strong> — somente para criar uma pasta chamada "Drive Image Drop" e salvar os arquivos enviados pelo próprio usuário.</li>
-    </ul>
-    <p>O escopo OAuth utilizado é <code>drive.file</code>, o mais restrito disponível — que permite acesso <strong>apenas aos arquivos criados pela própria extensão</strong>, sem acesso a nenhum outro arquivo do Drive do usuário.</p>
-  </section>
-
-  <section>
-    <h2>3. O que não fazemos</h2>
-    <ul>
-      <li>Não coletamos nenhum dado pessoal</li>
-      <li>Não armazenamos arquivos, tokens ou informações em servidores próprios</li>
-      <li>Não compartilhamos dados com terceiros</li>
-      <li>Não monitoramos o uso da extensão</li>
-      <li>Não acessamos histórico de navegação, abas ou outros dados do navegador</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>4. Armazenamento do token de autenticação</h2>
-    <p>O token de autenticação do Google é gerenciado exclusivamente pelo próprio navegador Chrome, através da API <code>chrome.identity</code>. A extensão não persiste o token em nenhum local externo.</p>
-  </section>
-
-  <section>
-    <h2>5. Permissões declaradas</h2>
-    <ul>
-      <li><strong>identity</strong> — necessária para autenticar o usuário com a conta Google via OAuth2.</li>
+      <li>Autenticar o usuário com sua conta Google via OAuth2</li>
+      <li>Exibir o nome, e-mail e foto do usuário conectado na interface</li>
+      <li>Criar pastas no Google Drive do usuário</li>
+      <li>Fazer upload dos arquivos selecionados para o Drive do usuário</li>
+      <li>Configurar permissões de acesso (público ou restrito ao proprietário)</li>
+      <li>Gerar links de visualização dos arquivos enviados</li>
     </ul>
   </section>
 
   <section>
-    <h2>6. Serviços de terceiros</h2>
-    <p>A extensão se comunica exclusivamente com as APIs oficiais do Google:</p>
-    <ul>
-      <li>Google Drive API (upload de arquivos e criação de pasta)</li>
-      <li>Google Drive About API (nome, e-mail e foto do usuário logado)</li>
-    </ul>
-    <p>Estas comunicações estão sujeitas à <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade do Google</a>.</p>
+    <h2>4. Processamento e armazenamento</h2>
+    <p><strong>Sem servidor próprio.</strong> A extensão opera inteiramente no navegador do usuário. Os arquivos trafegam diretamente do navegador para a API do Google Drive — nenhum dado passa por infraestrutura da NN Contabilidade &amp; Consultoria.</p>
+    <p><strong>Token de autenticação:</strong> gerenciado pelo próprio Chrome via <code>chrome.identity</code>. Não é persistido em banco de dados ou servidor externo.</p>
+    <p><strong>Dados de perfil:</strong> nome, e-mail e foto são carregados a cada sessão e mantidos apenas na memória do popup. Não são gravados em nenhum local.</p>
   </section>
 
   <section>
-    <h2>7. Contato</h2>
-    <p>Em caso de dúvidas sobre esta política, entre em contato pelo e-mail: <a href="mailto:lucascabralp567@gmail.com">lucascabralp567@gmail.com</a></p>
+    <h2>5. Compartilhamento de dados</h2>
+    <p>A extensão <strong>não compartilha nenhum dado com terceiros</strong>. As únicas comunicações externas são com serviços oficiais do Google:</p>
+    <ul>
+      <li><strong>Google OAuth2 API</strong> — autenticação do usuário</li>
+      <li><strong>Google Drive API v3</strong> — criação de pastas, upload e permissões</li>
+    </ul>
+    <p>Essas comunicações estão sujeitas à <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade do Google</a>.</p>
   </section>
 
-  <footer>
-    &copy; 2026 NN Contabilidade &amp; Consultoria · Todos os direitos reservados
-  </footer>
+  <section>
+    <h2>6. Escopos OAuth utilizados</h2>
+    <table>
+      <tr><th>Escopo</th><th>Motivo de uso</th></tr>
+      <tr><td><code>drive.file</code></td><td>Criar pastas e fazer upload de arquivos no Drive do usuário. Acesso restrito apenas aos arquivos criados pela própria extensão — não concede acesso a arquivos preexistentes.</td></tr>
+    </table>
+  </section>
 
+  <section>
+    <h2>7. Documentos confidenciais</h2>
+    <p>Quando o usuário ativa a opção "Documento confidencial", o arquivo é salvo em subpasta restrita e a extensão remove ativamente qualquer permissão de acesso público, garantindo que apenas o proprietário da conta Google autenticada tenha acesso.</p>
+  </section>
+
+  <section>
+    <h2>8. Retenção de dados</h2>
+    <p>A extensão não retém dados. Os arquivos enviados ficam no Google Drive do próprio usuário, sob controle total dele. O usuário pode excluí-los a qualquer momento diretamente no Drive.</p>
+  </section>
+
+  <section>
+    <h2>9. Direitos do usuário</h2>
+    <ul>
+      <li><strong>Revogar acesso:</strong> em <a href="https://myaccount.google.com/permissions" target="_blank">myaccount.google.com/permissions</a> a qualquer momento</li>
+      <li><strong>Excluir dados:</strong> arquivos no Drive podem ser excluídos diretamente pelo usuário</li>
+      <li><strong>Desinstalar:</strong> encerra todo o acesso imediatamente</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>10. Alterações nesta política</h2>
+    <p>Alterações serão publicadas nesta página com data de atualização revisada. O uso contínuo da extensão constitui aceite das novas condições.</p>
+  </section>
+
+  <section>
+    <h2>11. Contato</h2>
+    <p>Dúvidas sobre esta política: <a href="mailto:lucascabralp567@gmail.com">lucascabralp567@gmail.com</a></p>
+  </section>
+
+  <footer>&copy; 2026 NN Contabilidade &amp; Consultoria · Todos os direitos reservados</footer>
 </div>
 </body>
 </html>
